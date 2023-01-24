@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: linear-gradient(to right, #32A89C, #009688);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.area-login {
+    height: 450px;
+    width: 400px;
+    background-color: #00635A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
+}
+
+.area-login label {
+    color: #00E3CC;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.area-login input {
+    margin-top: 5px;
+    padding: 5px 0px;
+    width: 65%;
+    outline: none;
+}
+
+button {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #44E3D3;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+}
+
+button:hover {
+    background-color: #5eeedf;
+    color: rgb(49, 49, 49);
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right h1 {
+    color: #44E3D3;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 45px;
+}
+
+@media (max-width:850px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .area-login {
+        height: 100%;
+        width: 100%;
+        border-radius: none;
+    }
+
+    .right {
+        position: relative;
+        z-index: 0;
+    }
+}
